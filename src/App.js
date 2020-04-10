@@ -1,45 +1,19 @@
-import React, { Component } from 'react'
-import ReactSearchBox from 'react-search-box'
+import React, { Component } from "react";
+import "./App.css";
+import AutoComplete from './components/AutoComplete';
 
-
-
-export default class App extends Component {
-  data = [
-    {
-      key: 'Delhi',
-      value: 'Delhi',
-    },
-    {
-      key: 'Chennai',
-      value: 'chennai',
-    },
-    {
-      key: 'Puducherry',
-      value: 'Puducherry',
-    },
-    {
-      key: 'kasmir',
-      value: 'kasmir',
-    },
-    {
-      key: 'ooty',
-      value: 'ooty',
-    },
-  ]
-
+class App extends Component {
   render() {
     return (
-      <ReactSearchBox
-        placeholder="search"
-        
-      
-        data={this.data}
-        callback={record => console.log(record)}
-        
-
-      />
-    )
+      <div className="App">
+      	<div className="App-Component">
+      	  <div className="App-Component">
+            <AutoComplete />
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 
-      
+export default App;
