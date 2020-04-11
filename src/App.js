@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import AutoComplete from './components/AutoComplete';
+import Auto from './components/Auto';
 
 class App extends Component {
   render() {
@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
       	<div className="App-Component">
       	  <div className="App-Component">
-            <AutoComplete />
+            <Auto />
           </div>
         </div>
       </div>

@@ -22,6 +22,8 @@ class AutoComplete extends Component {
 	if (value.length > 0) {
 	    const regex = new RegExp(`^${value}`,'i');
 	    suggestions = this.items.sort().filter(v => regex.test(v));
+	    console.log(value);
+	    
 	}
 	this.setState(() => ({ suggestions, text: value }));
 	}
@@ -51,6 +53,7 @@ class AutoComplete extends Component {
 		return (
 			<div className="AutoCompleteText">
 				<input value={text} onChange={this.onTextChange} type="text" />
+
 				<ul>
 					{this.renderSuggestions()}
 				</ul>
