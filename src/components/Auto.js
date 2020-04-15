@@ -1,6 +1,6 @@
 import React from "react";
 import './AutoCompleteText.css'
-
+import sampleData from '../sample.json';
 class Auto extends React.Component {
   constructor(props) {
     super(props);
@@ -16,6 +16,7 @@ class Auto extends React.Component {
     this.addItem = this.addItem.bind(this);
     this.removeItem = this.removeItem.bind(this);
   }
+  
 
   addItem(e) {
     e.preventDefault();
@@ -112,6 +113,7 @@ class List extends React.Component {
     this.setState({
       filtered: newList
     });
+    console.log(newList);
   }
 	
 	render() {

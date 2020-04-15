@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Auto from './components/Auto';
+import Crud from './components/Crud';
 
 class App extends Component {
   render() {
@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
       	<div className="App-Component">
       	  <div className="App-Component">
-            <Auto />
+            <Crud />
           </div>
         </div>
       </div>
