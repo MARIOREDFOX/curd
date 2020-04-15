@@ -1,6 +1,7 @@
 import React from "react";
 import './AutoCompleteText.css'
 import sampleData from '../sample.json';
+
 let users = sampleData;
 
 class Crud extends React.Component {
@@ -37,27 +38,29 @@ class Crud extends React.Component {
     }
 
     return (
-      <div className="AutoCompleteText">
+      <div>
         <h3>Search Box</h3>
-        <div>
-          <input
-            type="text"
-            value={this.state.searchString}
-            ref="search"
-            onChange={this.handleChange}
-            placeholder="Search here..."
-          /><hr />
-          <ul>
-            {_users.map(l => {
-              return (
-                <li>
-                  {l.name}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div>
+          <div className="AutoCompleteText">
+            <div>
+              <input
+                type="text"
+                value={this.state.searchString}
+                ref="search"
+                onChange={this.handleChange}
+                placeholder="Search here..."
+              /><hr />
+              <ul>
+                {_users.map(l => {
+                  return (
+                    <li>
+                      {l.name}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+    <div>
     );
   }
 }
